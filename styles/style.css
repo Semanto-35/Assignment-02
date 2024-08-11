@@ -1,0 +1,604 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/miama');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{ 
+    font-family: "Inter", sans-serif;
+    background-color: black;
+} 
+
+/* shared styles starts */
+p, td{
+    color: rgba(255, 255, 255);
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    opacity: 0.5;
+}
+h3{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;
+}
+h5{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+.btn-primary{
+    width: 224px;
+    height: 54px;
+    color: rgb(255, 255, 255);
+    font-size: 1.125rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+}
+/* shared styles ends */
+
+/* navbar styles starts */
+nav{
+    max-width: 1060px;
+    height: 46px;
+    margin: 0 auto;
+    margin-top: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav h4{
+    color: rgb(230, 83, 60);
+    font-family: Inter;
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+nav a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+nav .menu{
+    width: 465px;
+    height: 46px;
+    display: flex;
+    font-size: 1.25rem;
+    padding: 0 20px 0 3px;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 40px;
+}
+nav .home{
+    width: 92px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 46px;
+    border: none;
+    background: rgb(230, 83, 60);
+}
+nav .bar{
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    display: none;
+}
+/* navbar styles ends */
+
+/* header section starts here */
+header{
+    max-width: 1440px;
+    height: 715px;
+    margin: 0 auto;
+    border: 2px solid blue;
+    background: linear-gradient(180deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+}
+.banner-container{ 
+    max-width: 1440px;
+    height: 580px;
+    margin-top: 32px;
+    display: flex;
+    gap: 90px;
+    border: 2px solid lightsalmon;
+}
+.banner-items{
+    max-width: 599.05px;
+    height: 440px;
+    margin-top: 64px;
+    margin-left: 190px;
+    border: 2px solid chartreuse;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+.banner-items>div{
+    max-width: 462px;
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+}
+.banner-items h1{
+    color: rgb(255, 255, 255);
+    font-size: 5rem;
+    font-weight: 900;
+}
+.banner-items .shape{
+    font-family: 'Miama', sans-serif;
+    font-size: 10rem;
+    font-weight: 400;
+    line-height: 0;                                  
+}
+.banner-items .btn{
+    width: 224px;
+    height: 54px;
+    background: black;
+    color: rgb(255, 255, 255);
+    font-size: 1.125rem;
+    font-weight: 600;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 42px;
+}
+.banner-image{
+    width: 349px;
+    height: 580px;
+    position: relative;
+    border: 2px solid yellow;
+}
+.banner-image img{
+    width: 100%;
+}
+.box-1, .box-2{
+    width: 206px;
+    height: 96px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    background: rgba(48, 48, 48, 0.54);
+}
+.box-1{
+    position: absolute;
+    top: 125px;
+    left: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.box-1 h2{
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+}
+.box-2{
+    position: absolute;
+    bottom: 65px;
+    right: 256px;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+.box-2 h2{
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+}
+.box-2 .circle{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(230, 83, 60);
+    border-radius: 50%;
+}
+/* header section emds here */
+
+/* habits section starts here */
+.habits{
+    max-width: 1044px;
+    height: 452px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.habits-text{
+    max-width: 671px;
+    height: 120px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.habits-image{
+    max-width: 1044px;
+    height: 274px;
+    margin-top: 58px;
+    display: flex;
+    justify-content: space-between;
+}
+.habits-items{
+    width: 231px;
+    height: 274px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+.image-1{
+    width: 180px;
+    height: 180px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    background-image: url(../images/image\ 3.png);
+    background-repeat: no-repeat;
+}
+.image-2{
+    width: 180px;
+    height: 180px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    background-image: url(../images/image\ 2.png);
+    background-repeat: no-repeat;
+}
+.image-3{
+    width: 180px;
+    height: 180px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    background-image: url(../images/image\ 4.png);
+    background-repeat: no-repeat;
+}
+.image-4{
+    width: 180px;
+    height: 180px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    background-image: url(../images/image\ 5.png);
+    background-repeat: no-repeat;
+}
+/* habits section starts here */
+
+/* run extra section starts here */
+.run-extra{
+    max-width: 1060px;
+    height: 371px;
+    margin: 0 auto;
+    margin-top: 100px;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.run-text{
+    width: 443px;
+    height: 290px;
+    margin-left: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.runing-image{
+    width: 366px;
+    height: 312px;
+    margin-right: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+}
+.runing-image img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-61%, -41%) scale(.8);
+}
+/* run extra section ends here */
+
+/* training section starts here */
+.training{
+    max-width: 1060px;
+    height: 581px;
+    margin: 0 auto;
+    margin-top: 100px;
+    border: 2px solid crimson;
+}
+.train-text{
+    max-width: 671px;
+    height: 120px;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.train-items{
+    width: 100%;
+    height: 402px;
+    margin-top: 59px;
+    border: 2px solid purple;
+}
+.row-1{
+    width: 100%;
+    height: 201px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.row-2{
+    width: 100%;
+    height: 201px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.team-pic{
+    width: 30%;
+    height: 201px;
+}
+.team-pic img{
+    width: 100%;
+    height: 100%;
+}
+/* .train-items{
+    width: 100%;
+    height: 402px;
+    margin-top: 59px;
+    border: 2px solid white;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+.train-pic{
+    width: 300px;
+    height: 201px;
+}
+.train-pic img{
+    width: 100%;
+} */
+/* training section ends here */
+
+/* BMI section start here */
+.BMI{
+    max-width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.BMI-text{
+    max-width: 670px;
+    height: 120px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.BMI-container{
+    max-width: 1440px;
+    height: 500px;
+    margin-top: 100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: rgb(34, 34, 34);
+}
+.BMI-container .title{
+    max-width: 443px;
+    height: 34px;
+    position: absolute;
+    top:52px;
+    left: 170px;
+}
+.title h5, .div1 h5{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: 900;
+}
+.BMI-chart{    
+    width: 350px;
+    height: 250px;
+    color: rgb(255, 255, 255);
+}
+table{
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+th, td{
+    padding-left: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    text-align: left;
+}
+th{
+    padding: 10px;
+}
+.calculate-BMI{
+    max-width: 577px;
+    height: 386px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.calculate-BMI .div1{
+    width: 100%;
+    height: 96px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.calculate-BMI .div2{
+    width: 100%;
+    height: 168px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.div2>div{
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    height: 48px;
+}
+.div2 .input1 input, .input2 input, #Sex{
+    width: 281px;
+    height: 48px;
+    border: none;
+    border-radius: 8px;
+    padding-left: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 1rem;
+}
+.div2 #factor{
+    width: 100%;
+    height: 48px;
+    border: none;
+    border-radius: 8px;
+    padding-left: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 1rem;
+}
+/* BMI section ends here */
+
+
+/* meet our team section starts here */
+.meet-our-team{
+    max-width: 1060px;
+    height: 782px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.meet-team-text{
+    max-width: 671px;
+    height: 120px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+.meet-team-items{
+    width: 100%;
+    height: 604px;
+    margin-top: 58px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+}
+.team-pic{
+    width: 326.667px;
+    height: 272px;
+    border-radius: 18px;
+    background: rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+.team-pic h2{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 20px;
+    bottom: 30px;
+}
+.team-pic p{
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+}
+.team-pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+}
+/* meet our team section ends here */
+
+
+/* footer section start here */
+footer{
+    max-width: 1440px;
+    height: 489px;
+    margin: 0 auto;
+    margin-top: 100px;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+.fitness{
+    max-width: 1059px;
+    height: 249px;
+    margin: 0 auto;
+    margin-top: 66px;
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+.fit-item1{
+    max-width: 443px;
+    height: 176px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.fit-item1 h1{
+    color: rgb(230, 83, 60);
+    font-family: Inter;
+    font-size: 70px;
+    font-weight: 800;
+}
+.fit-item2{
+    width: 514px;
+    height: 249px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fit-item2 .text{
+    width: 181px;
+    height: 249px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.fit-item2 .text .link{
+    width: 181px;
+    height: 172px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.text h5{
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+.fit-item2 .text .link a{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+hr{
+    max-width: 1059.5px;
+    margin: 0 auto;
+    margin-top: 80px;
+    opacity: 0.3;
+}
+footer .copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 32px auto;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+/* footer section ends here */
