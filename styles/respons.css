@@ -3,12 +3,14 @@
     header{
         width: 100%;
         height: 100%;
+        gap: 50px;
     }
     h3{
         font-size: 2rem;
     }
     nav{
         width: 90%;
+        gap: 195px;
     }
     nav .menu{
         display: none;
@@ -19,7 +21,6 @@
     .banner-container{
         width: 100%;
         height: 100%;
-        margin-top: 3rem;
         gap: 48px;
         flex-direction: column;
     }
@@ -34,7 +35,7 @@
     .banner-items .shape{
         font-size: 6rem;
     }
-    .banner-items>div{
+    .banner-items div{
         width: 100%;
     }
     .banner-image{
@@ -43,9 +44,10 @@
         margin: 0 auto;
     }
     .box-1{
-        width: 180px;
-        top: 48px;
-        left: 230px;
+        width: 150px;
+        height: 80px;
+        top: 70px;
+        left: 210px;
     }
     .box-1 h2{
         font-size: 2rem;
@@ -54,9 +56,13 @@
         font-size: 0.75rem;
     }
     .box-2{
-        width: 190px;
-        top: 320px;
-        right: 220px;
+        width: 160px;
+        height: 80px;
+        top: 340px;
+        left: 30px;
+    }
+    .box-2 .play-button{
+        display: block;
     }
     /* header section ends */
 
@@ -64,6 +70,7 @@
     .habits{
         width: 85%;
         height: 100%;
+        margin-top: 0;
     }
     .habits-text{
         width: 90%;
@@ -82,6 +89,7 @@
         height: 100%;
         flex-direction: column;
         gap: 40px;
+        margin-top: 65px;
     }
     .run-text{
        width: 85%;
@@ -100,20 +108,41 @@
     .runing-image img{
         transform: translate(-53%, -44%) scale(.4);
     }
-    .training{
-       width: 90%;
-       height: 100%;
-    }
-    .train-text{
-        width: 90%;
-        /* height: 160px; */
-    }
     /* run extra section ends */
+
+    /* training-exercises section starts */
+    .training{
+        width: 90%;
+        height: 100%;
+        margin-top: 65px;
+     }
+     .train-text{
+         width: 100%;
+         height: 100%;
+     }
+     .train-text h3{
+        width: 330px;
+     }
+     .row-1{
+        grid-template-columns: 1fr 1fr;
+     }
+     .row-2{
+        grid-template-columns: 0.9fr 1.1fr;
+     }
+     .train-pic-4 h6{
+        left: 20px;
+        top: 140px;
+     }
+     .train-pic-3, .train-pic-6{
+        display: none;
+     }     
+    /* training-exercises section ends */
 
     /* BMI section starts */
     .BMI{
         width: 100%;
         height: 100%;
+        margin-top: 50px;
     }
     .BMI-text{
         width: 90%;
@@ -124,6 +153,7 @@
         flex-direction: column;
         align-items: start;
         gap: 50px;
+        margin-top: 40px;
     }
     .BMI-container .title{
         left: 20px;
@@ -135,7 +165,7 @@
         margin-top: 90px;
     }
     .calculate-BMI{
-        width: 95%;
+        width: 90%;
         margin: 0 auto;
     }
     .calculate-BMI button{
@@ -150,6 +180,7 @@
     .meet-our-team{
         width: 90%;
         height: 100%;
+        margin-top: 65px;
     }
     .meet-team-text{
         width: 85%;
@@ -168,10 +199,47 @@
     }
     /* meet our team section ends */
 
+    /* unique section starts here */
+    /* diet plan starts */
+    .diet-plan-container{
+        width: 90%;
+        height: 100%;
+        margin-top: 65px;
+    }
+    .diet-plan-text{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .diet-plan-items{
+        grid-template-columns: 1fr;
+    }
+    /* diet plan ends */
+    /* membership starts */
+    .membership-container{
+        width: 100%;
+        height: 100%;
+        margin-top: 65px;
+    }
+    .membership-text{
+        width: 90%;
+        margin: 20px auto;
+    }
+    .membership-items{
+        width: 90%;
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+    }
+    .plans{
+        margin: 30px;
+    }
+    /* membership ends */
+    /* unique section ends here*/
+
     /* footer section starts */
     footer{
         width: 100%;
         height: 100%;
+        margin-top: 65px;
     }
     .fitness{
         width: 90%;

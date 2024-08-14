@@ -39,6 +39,11 @@ h5{
     border: none;
     border-radius: 42px;
     background: rgb(230, 83, 60);
+    cursor: pointer;
+}
+.btn-primary:hover{
+    background-color: rgb(249, 140, 97);
+    transition: .3s;
 }
 /* shared styles ends */
 
@@ -51,6 +56,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 463px;
 }
 nav h4{
     color: rgb(230, 83, 60);
@@ -95,30 +101,30 @@ header{
     max-width: 1440px;
     height: 715px;
     margin: 0 auto;
-    border: 2px solid blue;
-    background: linear-gradient(180deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    background: linear-gradient(to bottom, rgba(17, 17, 17, 0.7) 0%, rgba(119, 119, 119, 0.3) 50%, rgba(17, 17, 17, 0.5) 100%);
+
 }
 .banner-container{ 
     max-width: 1440px;
     height: 580px;
-    margin-top: 32px;
     display: flex;
     gap: 90px;
-    border: 2px solid lightsalmon;
 }
 .banner-items{
     max-width: 599.05px;
     height: 440px;
     margin-top: 64px;
     margin-left: 190px;
-    border: 2px solid chartreuse;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: start;
 }
-.banner-items>div{
-    max-width: 462px;
+.banner-items div{
+    width: 462px;
     height: 54px;
     display: flex;
     justify-content: space-between;
@@ -149,19 +155,16 @@ header{
     width: 349px;
     height: 580px;
     position: relative;
-    border: 2px solid yellow;
 }
 .banner-image img{
     width: 100%;
 }
-.box-1, .box-2{
-    width: 206px;
+.box-1{
+    width: 190px;
     height: 96px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     background: rgba(48, 48, 48, 0.54);
-}
-.box-1{
     position: absolute;
     top: 125px;
     left: 230px;
@@ -176,6 +179,11 @@ header{
     color: rgb(255, 255, 255);
 }
 .box-2{
+    width: 206px;
+    height: 96px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    background: rgba(48, 48, 48, 0.54);
     position: absolute;
     bottom: 65px;
     right: 256px;
@@ -194,6 +202,16 @@ header{
     height: 40px;
     background-color: rgb(230, 83, 60);
     border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+.box-2 .play-button{
+    display: none;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
 }
 /* header section emds here */
 
@@ -236,6 +254,8 @@ header{
     border-radius: 50%;
     background-image: url(../images/image\ 3.png);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .image-2{
     width: 180px;
@@ -244,6 +264,8 @@ header{
     border-radius: 50%;
     background-image: url(../images/image\ 2.png);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .image-3{
     width: 180px;
@@ -252,6 +274,8 @@ header{
     border-radius: 50%;
     background-image: url(../images/image\ 4.png);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .image-4{
     width: 180px;
@@ -260,6 +284,8 @@ header{
     border-radius: 50%;
     background-image: url(../images/image\ 5.png);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 /* habits section starts here */
 
@@ -305,59 +331,138 @@ header{
     height: 581px;
     margin: 0 auto;
     margin-top: 100px;
-    border: 2px solid crimson;
 }
 .train-text{
     max-width: 671px;
     height: 120px;
-    border: 2px solid white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 14px;
 }
 .train-items{
     width: 100%;
     height: 402px;
     margin-top: 59px;
-    border: 2px solid purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .row-1{
     width: 100%;
     height: 201px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 0.9fr 2fr 1.1fr;
 }
 .row-2{
     width: 100%;
     height: 201px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1.7fr 1fr 1.3fr;
 }
-.team-pic{
-    width: 30%;
+.train-pic-1{
+    width: 100%;
     height: 201px;
+    background: linear-gradient(rgba(6, 255, 210, 0.5), rgba(6, 255, 210, 0.5)), url(../images/exercise1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
-.team-pic img{
+.train-pic-1 h6{
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    font-weight: 500;
+    position: absolute;
+    left: 20px;
+    bottom: 30px;
+}
+.train-pic-2{
     width: 100%;
-    height: 100%;
-}
-/* .train-items{
-    width: 100%;
-    height: 402px;
-    margin-top: 59px;
-    border: 2px solid white;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: repeat(3, 1fr);
-}
-.train-pic{
-    width: 300px;
     height: 201px;
+    background: linear-gradient(rgba(255, 0, 0, 0.3), rgba(255, 0, 0, 0.3)), url(../images/exercise2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
-.train-pic img{
+.train-pic-2 h6{
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 500;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.train-pic-3{
     width: 100%;
-} */
+    height: 201px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/exercise3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.train-pic-3 h6{
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 500;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+.train-pic-4{
+    width: 100%;
+    height: 201px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/exercise4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.train-pic-4 h6{
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 500;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+.train-pic-5{
+    width: 100%;
+    height: 201px;
+    background: linear-gradient(rgba(66, 255, 0, 0.3), rgba(66, 255, 0, 0.3)), url(../images/exercise5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.train-pic-5 h6{
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 500;
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+}
+.train-pic-6{
+    width: 100%;
+    height: 201px;
+    background: linear-gradient(rgba(0, 71, 255, 0.3), rgba(0, 71, 255, 0.3)), url(../images/exercise6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.train-pic-6 h6{
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 500;
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+}
 /* training section ends here */
 
 /* BMI section start here */
@@ -365,7 +470,7 @@ header{
     max-width: 1440px;
     height: 100%;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 90px;
 }
 .BMI-text{
     max-width: 670px;
@@ -378,7 +483,7 @@ header{
 .BMI-container{
     max-width: 1440px;
     height: 500px;
-    margin-top: 100px;
+    margin-top: 90px;
     position: relative;
     display: flex;
     align-items: center;
@@ -395,7 +500,7 @@ header{
 .title h5, .div1 h5{
     color: rgb(255, 255, 255);
     font-family: Inter;
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 900;
 }
 .BMI-chart{    
@@ -432,7 +537,7 @@ th{
 }
 .calculate-BMI .div2{
     width: 100%;
-    height: 168px;
+    height: 176px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -444,8 +549,8 @@ th{
     width: 100%;
     height: 48px;
 }
-.div2 .input1 input, .input2 input, #Sex{
-    width: 281px;
+.div2 .input1 input, .input2 input, #gender{
+    width: 50%;
     height: 48px;
     border: none;
     border-radius: 8px;
@@ -462,7 +567,7 @@ th{
     padding-left: 15px;
     background: rgba(255, 255, 255, 0.1);
     color: rgba(255, 255, 255, 0.3);
-    font-size: 1rem;
+    font-size: 1rem;  
 }
 /* BMI section ends here */
 
@@ -472,7 +577,7 @@ th{
     max-width: 1060px;
     height: 782px;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 90px;
 }
 .meet-team-text{
     max-width: 671px;
@@ -522,12 +627,149 @@ th{
 /* meet our team section ends here */
 
 
+/* unique section starts here */
+/* diet plan starts */
+.diet-plan-container{
+    max-width: 1060px;
+    margin: 0 auto;
+    margin-top: 90px;
+    background-color: rgb(34, 34, 34);
+    border-radius: 16px;
+}
+.diet-plan-text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    gap: 20px;
+}
+.diet-plan-text h3, .membership-text h3{
+    margin-top: 20px;
+}
+.diet-plan-items{
+    width: 100%;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.weight-loss{
+    background-color: #d2b48c;
+    padding: 30px;
+    margin: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5);
+}
+.weight-loss h5{
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+.weight-loss ul{
+    margin-left: 20px;
+    margin-top: 20px;
+    text-align: center;
+    list-style-type: none;
+}
+.weight-loss ul li{
+    font-size: 1rem;
+    color: rgb(17, 17, 17);
+    margin-bottom: 20px;
+}
+.diet-btn{
+    display: flex;
+    justify-content: center;
+}
+.diet-btn button{
+    padding: 15px 60px;
+    margin-bottom: 20px;
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    background: rgb(230, 83, 60);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.diet-btn button:hover{
+    background-color: lightsalmon;
+    transition: .3s;
+}
+/* diet plan ends */
+/* membership starts*/
+.membership-container{
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 90px;
+    background: rgb(34, 34, 34);
+}
+.membership-text{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    gap: 20px;
+}
+.membership-items{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+}
+.plans{
+    background-color: #c0c0c0;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px;
+    box-shadow: 0 5px 10px rgba(18, 83, 247, 0.5);
+}
+.plans h5{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.plans p{
+    color: red;
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+.plans ul{
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+.plans ul li{
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+.plans button{
+    padding: 15px 30px;
+    color: rgb(255, 255, 255);
+    background: rgb(230, 83, 60);
+    font-size: 1.125rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.plans button:hover{
+    background-color: rgb(249, 140, 97);
+    transition: .3s;
+}
+/* membership ends */
+/* unique section ends here */
+
+
 /* footer section start here */
 footer{
     max-width: 1440px;
     height: 489px;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 90px;
     background: rgba(255, 255, 255, 0.1);
     display: flex;
     flex-direction: column;
